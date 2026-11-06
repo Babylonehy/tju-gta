@@ -1,0 +1,49 @@
+name: Update campus feed
+
+on:
+  issues:
+    types: [opened, edited, closed, reopened, deleted, transferred]
+  push:
+    paths:
+      - .github/workflows/campus-feed.yml
+      - scripts/build-campus-feed.mjs
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: read
+
+concurrency:
+  group: campus-feed
+  cancel-in-progress: false
+
+jobs:
+  update:
+    if: github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.23.2'
+      - name: Read public campus posts
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/build-campus-feed.mjs "$RUNNER_TEMP/campus-issues.json"
+      - name: Publish feed branch
+        shell: bash
+        run: |
+          if git ls-remote --exit-code --heads origin refs/heads/campus-feed; then
+            git fetch --no-tags origin refs/heads/campus-feed
+            git switch --detach FETCH_HEAD
+          else
+            status=$?
+            test "$status" -eq 2
+            git switch --orphan campus-feed
+          fi
+          cp "$RUNNER_TEMP/campus-issues.json" issues.json
+          git add issues.json
+          if ! git diff --cached --quiet; then
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Refresh public campus feed'
+            git push origin HEAD:refs/heads/campus-feed
+          fi

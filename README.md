@@ -24,7 +24,7 @@
 2. 进入 **Settings → Pages**，将 **Source** 设为 **GitHub Actions**。
 3. 推送默认分支，或在 **Actions → Deploy 北洋漫梗 to GitHub Pages** 手动运行。工作流会构建 ForgeAX 静态站，自动设置 Pages 子路径并绑定当前仓库的 Issues。部署结果页给出访问地址，无需服务器、Token 或数据库。
 
-留言板读取最近最多 100 条符合格式的开放 Issues（最多扫描最近 300 条开放 Issue/PR），每三分钟同步一次，也可以手动刷新。如果 GitHub API 达到速率限制，稍后再试。发布与回复通过 GitHub 完成。账号、内容和附件权限由 GitHub 管理。
+留言板读取最近最多 100 条符合格式的开放 Issues（最多扫描最近 300 条开放 Issue/PR）。Issues 更新会触发 **Update campus feed**，把公开留言快照写到 `campus-feed` 分支。游戏每三分钟同步一次，也可以手动刷新。新留言会在 Actions 同步和缓存更新后出现。发布与回复通过 GitHub 完成，账号、内容和附件权限由 GitHub 管理。
 
 参考：[GitHub Pages 自定义工作流](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)、[GitHub 预填 Issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue)、[图片附件](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/attaching-files)。
 

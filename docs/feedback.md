@@ -130,3 +130,8 @@
 - 预期：引擎完成初始化并显示校园。实际：默认生产启动时限为 30 秒，首次加载超过该时限，Host 报 `plugin-startup-failed`，内层错误是 `app-execution-deadline-exceeded`，阶段为 `handshake`。
 - 证据：GitHub Actions 运行 `42196510345`；本机 `/tmp/beiyang-pages-public-clean.log` 保存了完整浏览器错误。另一次冷启动中单个着色器请求返回 503，独立重试返回 200 且 SHA-256 与资源名相符。
 - 修复：使用 DevKit 的项目启动策略 `package.json#forgeax.startupTimeoutMs`，将启动期限设为 120 秒。该设置只延长启动等待。
+
+### 2026-11-06 — 共享出口耗尽了留言板的匿名 API 配额
+
+- 范围：GitHub Pages 公开站点的校园留言。线上浏览器的 Issues 请求返回 403，响应头 `x-ratelimit-remaining: 0`。同一会话的游戏场景已完成 300 帧。
+- 修复：Issues 变更触发 Actions 刷新公开快照。玩家优先读取快照，快照尚未生成时仍可用原有 API 读取。

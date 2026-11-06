@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 import { ATLAS_REVISION, DOCKS, EAST_GATE, FOOT_GATE, GATE_VEHICLES, gateRoadZ, onEastWalk, PARCELS, SECRETS, SPOTS, scanCode } from '../campus/atlas.ts';
 import { approveGate, canTravel, collectSecret, dismount, IDLE, pickupParcel, START, stepTravel, toggleCar, unlockRide, warp } from '../campus/explore.ts';
 import { clockLabel, daylightAt, LAB, maxStamina, observe, restoreLife, START_LIFE, submitProject, toolAction } from '../campus/life.ts';
@@ -9,7 +9,7 @@ import { BUILDINGS as buildings, destinationFor } from '../campus/directory.ts';
 import { BIRDS, birdPose } from '../campus/ambient.ts';
 import { campusPopulation, VENUES, venuePopulation } from '../campus/population.ts';
 import { routeAcrossCampus } from '../campus/navigation.ts';
-import { connectsToTju, DEMO, findHiddenPost, issueToPost, newIssueUrl } from '../hud/community.ts';
+import { connectsToTju, DEMO, findHiddenPost, issueToPost, loadPosts, newIssueUrl } from '../hud/community.ts';
 
 const runner={...IDLE,forward:1,sprint:true};
 const step=(state:typeof START,controls=runner,frames=100)=>{
@@ -170,6 +170,19 @@ describe('stamina, tools and computing projects',()=>{
 
 describe('shared campus footprints',()=>{
   const repo='campus/beiyang';
+  it('loads the public feed even when the visitor cannot use the anonymous Issues API',async()=>{
+    const issue={number:42,state:'open',title:'[北洋留言 OSM1 1081.0,149.0] 东门',body:'东门见！',user:{login:'visitor'}};
+    const fetcher=vi.fn(async (url:string)=>url.includes('/campus-feed/')
+      ? Response.json([issue,{...issue,number:43,state:'closed'}])
+      : new Response(null,{status:403}));
+    vi.stubGlobal('fetch',fetcher);
+    try {
+      await expect(loadPosts(repo,new AbortController().signal)).resolves.toMatchObject([{id:42,message:'东门见！'}]);
+      expect(fetcher).toHaveBeenCalledTimes(1);
+    } finally {
+      vi.unstubAllGlobals();
+    }
+  });
   it('publishes new meter coordinates and migrates screenshot pins',()=>{
     const p={x:1081,z:149},issue={number:1,state:'open',body:'东门见！',user:{login:'visitor'}};
     const url=new URL(newIssueUrl(repo,p,issue.body));

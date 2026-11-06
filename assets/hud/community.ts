@@ -58,6 +58,19 @@ export function issueToPost(value: unknown, repo: string): Post | null {
 }
 export async function loadPosts(repo: string, signal: AbortSignal): Promise<Post[]> {
   if (!repoName(repo)) return [];
+  // Use the public snapshot to avoid spending every visitor's anonymous API quota.
+  try {
+    const feed = await fetch(`https://raw.githubusercontent.com/${repo}/campus-feed/issues.json`, {
+      signal: AbortSignal.any([signal, AbortSignal.timeout(8_000)]),
+      cache: 'no-cache',
+    });
+    if (feed.ok) {
+      const issues: unknown = await feed.json();
+      if (Array.isArray(issues)) return issues.map(issue=>issueToPost(issue,repo)).filter((post):post is Post=>post!==null).slice(0,100);
+    }
+  } catch (error) {
+    if (signal.aborted) throw error;
+  }
   const posts: Post[] = [];
   for (let page=1;page<=3 && posts.length<100;page++) {
     const url = `https://api.github.com/repos/${repo}/issues?state=open&sort=created&direction=desc&per_page=100&page=${page}`;
