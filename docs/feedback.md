@@ -122,3 +122,11 @@
 - 范围：ForgeaX 0.4.8 和本地预览连接器。首次重建 55 教后，生产构建生成 1,142,550 字节的资源清单，连接器报 static manifest is too large。
 - 证据：构建为七份新材质各生成 42 个独立的着色器产物。连接器的静态清单校验上限为 1 MiB。
 - 修复：55 教复用校园 GLB 已有的 PBR 材质，通过顶点颜色、玻璃纹理的取样区域和实建窗洞区分外观。
+
+### 2026-11-06 — GitHub Pages 冷启动超过 Worker 握手时限
+
+- 范围：ForgeaX 0.4.8，GitHub Pages 部署 `42196510345`，Chrome 1440×960 新会话。
+- 复现：清空站点缓存后打开公开 HTTPS 网址。主页、部署配置和资源清单均返回 200，游戏 Worker 仍在获取首帧资源。
+- 预期：引擎完成初始化并显示校园。实际：默认生产启动时限为 30 秒，首次加载超过该时限，Host 报 `plugin-startup-failed`，内层错误是 `app-execution-deadline-exceeded`，阶段为 `handshake`。
+- 证据：GitHub Actions 运行 `42196510345`；本机 `/tmp/beiyang-pages-public-clean.log` 保存了完整浏览器错误。另一次冷启动中单个着色器请求返回 503，独立重试返回 200 且 SHA-256 与资源名相符。
+- 修复：使用 DevKit 的项目启动策略 `package.json#forgeax.startupTimeoutMs`，将启动期限设为 120 秒。该设置只延长启动等待。

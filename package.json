@@ -5,6 +5,9 @@
   "type": "module",
   "license": "Apache-2.0",
   "packageManager": "pnpm@12.10.1",
+  "forgeax": {
+    "startupTimeoutMs": 120000
+  },
   "scripts": {
     "dev": "forgeax dev start",
     "build": "forgeax project build",
