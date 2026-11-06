@@ -1,0 +1,451 @@
+{
+  "importSettings": {
+    "defaultSceneIndex": 0,
+    "diagnostics": {
+      "matrixTrsCoexistNodes": [],
+      "nodeNames": [
+        "index_03_l",
+        "index_02_l",
+        "index_01_l",
+        "middle_03_l",
+        "middle_02_l",
+        "middle_01_l",
+        "pinky_03_l",
+        "pinky_02_l",
+        "pinky_01_l",
+        "ring_03_l",
+        "ring_02_l",
+        "ring_01_l",
+        "thumb_03_l",
+        "thumb_02_l",
+        "thumb_01_l",
+        "hand_l",
+        "lowerarm_l",
+        "upperarm_l",
+        "clavicle_l",
+        "index_03_r",
+        "index_02_r",
+        "index_01_r",
+        "middle_03_r",
+        "middle_02_r",
+        "middle_01_r",
+        "pinky_03_r",
+        "pinky_02_r",
+        "pinky_01_r",
+        "ring_03_r",
+        "ring_02_r",
+        "ring_01_r",
+        "thumb_03_r",
+        "thumb_02_r",
+        "thumb_01_r",
+        "hand_r",
+        "lowerarm_r",
+        "upperarm_r",
+        "clavicle_r",
+        "head",
+        "neck_01",
+        "spine_03",
+        "spine_02",
+        "spine_01",
+        "ball_l",
+        "foot_l",
+        "calf_l",
+        "thigh_l",
+        "ball_r",
+        "foot_r",
+        "calf_r",
+        "thigh_r",
+        "pelvis",
+        "Root",
+        "Armature",
+        "Body",
+        "Eyebrows",
+        "Eyelashes",
+        "Eyes",
+        "Teeth",
+        "Tongue",
+        "Cloth_briefs",
+        "Cloth_tshirt",
+        "Cloth_jeans",
+        "Cloth_jacket",
+        "Cloth_boots",
+        "Hair_short04"
+      ],
+      "unsupportedExtensions": []
+    }
+  },
+  "importer": "gltf",
+  "kind": "external-asset-package",
+  "schemaVersion": 1,
+  "source": "beiyang-guard.glb",
+  "sourceOverrideDescriptors": [
+    {
+      "payloadSchema": {
+        "additionalProperties": true,
+        "properties": {
+          "materialSlotDefaultOverrides": {
+            "additionalProperties": {
+              "nullable": true,
+              "type": "string"
+            },
+            "type": "object"
+          },
+          "materialSlots": {
+            "items": {
+              "additionalProperties": true,
+              "properties": {
+                "defaultMaterialGuid": {
+                  "type": "string"
+                },
+                "slotName": {
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "sourceKey": {
+                  "minLength": 1,
+                  "type": "string"
+                }
+              },
+              "required": [
+                "slotName"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      },
+      "semantic": "mesh-material-slot-defaults",
+      "sourceKey": "mesh:Body"
+    }
+  ],
+  "sourceOverrides": {
+    "mesh:Body": {
+      "materialSlots": [
+        {
+          "defaultMaterialGuid": "01a1aa80-d112-7924-b2e0-1b2890c1aad8",
+          "slotName": "Skin",
+          "sourceKey": "material:Skin"
+        },
+        {
+          "defaultMaterialGuid": "01a1aa80-d112-7924-b2e0-1b29a18e0069",
+          "slotName": "Eyebrow",
+          "sourceKey": "material:Eyebrow"
+        },
+        {
+          "defaultMaterialGuid": "01a1aa80-d112-7924-b2e0-1b2ac54ae789",
+          "slotName": "Eyelash",
+          "sourceKey": "material:Eyelash"
+        },
+        {
+          "defaultMaterialGuid": "01a1aa80-d112-7924-b2e0-1b2bd10ba5b6",
+          "slotName": "Eye",
+          "sourceKey": "material:Eye"
+        },
+        {
+          "defaultMaterialGuid": "01a1aa80-d112-7924-b2e0-1b2c48a2045e",
+          "slotName": "Iris",
+          "sourceKey": "material:Iris"
+        },
+        {
+          "defaultMaterialGuid": "01a1aa80-d112-7924-b2e0-1b2d3f89a180",
+          "slotName": "Cornea",
+          "sourceKey": "material:Cornea"
+        },
+        {
+          "defaultMaterialGuid": "01a1aa80-d112-7924-b2e0-1b2e5203660f",
+          "slotName": "Teeth",
+          "sourceKey": "material:Teeth"
+        },
+        {
+          "defaultMaterialGuid": "01a1aa80-d112-7924-b2e0-1b2fdfa4b838",
+          "slotName": "Tongue",
+          "sourceKey": "material:Tongue"
+        },
+        {
+          "defaultMaterialGuid": "01a1aa80-d112-7924-b2e0-1b30bb45fa49",
+          "slotName": "Cloth_briefs",
+          "sourceKey": "material:Cloth_briefs"
+        },
+        {
+          "defaultMaterialGuid": "01a1aa80-d112-7924-b2e0-1b31953ab9b7",
+          "slotName": "Cloth_tshirt",
+          "sourceKey": "material:Cloth_tshirt"
+        },
+        {
+          "defaultMaterialGuid": "01a1aa80-d112-7924-b2e0-1b32628439e3",
+          "slotName": "Cloth_jeans",
+          "sourceKey": "material:Cloth_jeans"
+        },
+        {
+          "defaultMaterialGuid": "01a1aa80-d112-7924-b2e0-1b331d4a9446",
+          "slotName": "Cloth_jacket",
+          "sourceKey": "material:Cloth_jacket"
+        },
+        {
+          "defaultMaterialGuid": "01a1aa80-d112-7924-b2e0-1b34224c7748",
+          "slotName": "Cloth_boots",
+          "sourceKey": "material:Cloth_boots"
+        },
+        {
+          "defaultMaterialGuid": "01a1aa80-d112-7924-b2e0-1b35889b9b82",
+          "slotName": "Hair_short04",
+          "sourceKey": "material:Hair_short04"
+        }
+      ]
+    }
+  },
+  "subAssets": [
+    {
+      "guid": "01a1aa80-d111-7dcf-bfd4-33240f128f1c",
+      "kind": "mesh",
+      "name": "Body",
+      "sourceIndex": 0,
+      "sourceKey": "mesh:Body"
+    },
+    {
+      "guid": "01a1aa80-d112-7924-b2e0-1b2890c1aad8",
+      "kind": "material",
+      "name": "Skin",
+      "sourceIndex": 0,
+      "sourceKey": "material:Skin"
+    },
+    {
+      "guid": "01a1aa80-d112-7924-b2e0-1b29a18e0069",
+      "kind": "material",
+      "name": "Eyebrow",
+      "sourceIndex": 1,
+      "sourceKey": "material:Eyebrow"
+    },
+    {
+      "guid": "01a1aa80-d112-7924-b2e0-1b2ac54ae789",
+      "kind": "material",
+      "name": "Eyelash",
+      "sourceIndex": 2,
+      "sourceKey": "material:Eyelash"
+    },
+    {
+      "guid": "01a1aa80-d112-7924-b2e0-1b2bd10ba5b6",
+      "kind": "material",
+      "name": "Eye",
+      "sourceIndex": 3,
+      "sourceKey": "material:Eye"
+    },
+    {
+      "guid": "01a1aa80-d112-7924-b2e0-1b2c48a2045e",
+      "kind": "material",
+      "name": "Iris",
+      "sourceIndex": 4,
+      "sourceKey": "material:Iris"
+    },
+    {
+      "guid": "01a1aa80-d112-7924-b2e0-1b2d3f89a180",
+      "kind": "material",
+      "name": "Cornea",
+      "sourceIndex": 5,
+      "sourceKey": "material:Cornea"
+    },
+    {
+      "guid": "01a1aa80-d112-7924-b2e0-1b2e5203660f",
+      "kind": "material",
+      "name": "Teeth",
+      "sourceIndex": 6,
+      "sourceKey": "material:Teeth"
+    },
+    {
+      "guid": "01a1aa80-d112-7924-b2e0-1b2fdfa4b838",
+      "kind": "material",
+      "name": "Tongue",
+      "sourceIndex": 7,
+      "sourceKey": "material:Tongue"
+    },
+    {
+      "guid": "01a1aa80-d112-7924-b2e0-1b30bb45fa49",
+      "kind": "material",
+      "name": "Cloth_briefs",
+      "sourceIndex": 8,
+      "sourceKey": "material:Cloth_briefs"
+    },
+    {
+      "guid": "01a1aa80-d112-7924-b2e0-1b31953ab9b7",
+      "kind": "material",
+      "name": "Cloth_tshirt",
+      "sourceIndex": 9,
+      "sourceKey": "material:Cloth_tshirt"
+    },
+    {
+      "guid": "01a1aa80-d112-7924-b2e0-1b32628439e3",
+      "kind": "material",
+      "name": "Cloth_jeans",
+      "sourceIndex": 10,
+      "sourceKey": "material:Cloth_jeans"
+    },
+    {
+      "guid": "01a1aa80-d112-7924-b2e0-1b331d4a9446",
+      "kind": "material",
+      "name": "Cloth_jacket",
+      "sourceIndex": 11,
+      "sourceKey": "material:Cloth_jacket"
+    },
+    {
+      "guid": "01a1aa80-d112-7924-b2e0-1b34224c7748",
+      "kind": "material",
+      "name": "Cloth_boots",
+      "sourceIndex": 12,
+      "sourceKey": "material:Cloth_boots"
+    },
+    {
+      "guid": "01a1aa80-d112-7924-b2e0-1b35889b9b82",
+      "kind": "material",
+      "name": "Hair_short04",
+      "sourceIndex": 13,
+      "sourceKey": "material:Hair_short04"
+    },
+    {
+      "guid": "01a1aa80-d112-7924-b2e0-1b36073111ef",
+      "kind": "scene",
+      "name": "Character",
+      "sourceIndex": 0,
+      "sourceKey": "scene:Character"
+    },
+    {
+      "guid": "01a1aa80-d112-7924-b2e0-1b373d82e99c",
+      "kind": "texture",
+      "name": "Skin-albedo",
+      "sourceIndex": 0,
+      "sourceKey": "texture:Skin-albedo"
+    },
+    {
+      "guid": "01a1aa80-d112-7924-b2e0-1b380110b4e2",
+      "kind": "texture",
+      "name": "Skin-normal",
+      "sourceIndex": 1,
+      "sourceKey": "texture:Skin-normal"
+    },
+    {
+      "guid": "01a1aa80-d112-7924-b2e0-1b391db91ee5",
+      "kind": "texture",
+      "name": "Eyebrow-albedo",
+      "sourceIndex": 2,
+      "sourceKey": "texture:Eyebrow-albedo"
+    },
+    {
+      "guid": "01a1aa80-d112-7924-b2e0-1b3ab687b186",
+      "kind": "texture",
+      "name": "Eyelash-albedo",
+      "sourceIndex": 3,
+      "sourceKey": "texture:Eyelash-albedo"
+    },
+    {
+      "guid": "01a1aa80-d112-7924-b2e0-1b3ba4fc331e",
+      "kind": "texture",
+      "name": "Eye-albedo",
+      "sourceIndex": 4,
+      "sourceKey": "texture:Eye-albedo"
+    },
+    {
+      "guid": "01a1aa80-d112-7924-b2e0-1b3c30bcf87a",
+      "kind": "texture",
+      "name": "Teeth-albedo",
+      "sourceIndex": 5,
+      "sourceKey": "texture:Teeth-albedo"
+    },
+    {
+      "guid": "01a1aa80-d112-7924-b2e0-1b3d41715504",
+      "kind": "texture",
+      "name": "Tongue-albedo",
+      "sourceIndex": 6,
+      "sourceKey": "texture:Tongue-albedo"
+    },
+    {
+      "guid": "01a1aa80-d112-7924-b2e0-1b3e4072e594",
+      "kind": "texture",
+      "name": "Cloth_briefs-albedo",
+      "sourceIndex": 7,
+      "sourceKey": "texture:Cloth_briefs-albedo"
+    },
+    {
+      "guid": "01a1aa80-d112-7924-b2e0-1b3f848d1767",
+      "kind": "texture",
+      "name": "Cloth_tshirt-albedo",
+      "sourceIndex": 8,
+      "sourceKey": "texture:Cloth_tshirt-albedo"
+    },
+    {
+      "guid": "01a1aa80-d112-7924-b2e0-1b40128ed97c",
+      "kind": "texture",
+      "name": "Cloth_tshirt-normal",
+      "sourceIndex": 9,
+      "sourceKey": "texture:Cloth_tshirt-normal"
+    },
+    {
+      "guid": "01a1aa80-d112-7924-b2e0-1b419c1ec096",
+      "kind": "texture",
+      "name": "Cloth_jeans-albedo",
+      "sourceIndex": 10,
+      "sourceKey": "texture:Cloth_jeans-albedo"
+    },
+    {
+      "guid": "01a1aa80-d112-7924-b2e0-1b42d646d606",
+      "kind": "texture",
+      "name": "Cloth_jeans-normal",
+      "sourceIndex": 11,
+      "sourceKey": "texture:Cloth_jeans-normal"
+    },
+    {
+      "guid": "01a1aa80-d112-7924-b2e0-1b4336b18c86",
+      "kind": "texture",
+      "name": "Cloth_jacket-albedo",
+      "sourceIndex": 12,
+      "sourceKey": "texture:Cloth_jacket-albedo"
+    },
+    {
+      "guid": "01a1aa80-d112-7924-b2e0-1b44f6e7efdc",
+      "kind": "texture",
+      "name": "Cloth_jacket-normal",
+      "sourceIndex": 13,
+      "sourceKey": "texture:Cloth_jacket-normal"
+    },
+    {
+      "guid": "01a1aa80-d112-7924-b2e0-1b456913be5e",
+      "kind": "texture",
+      "name": "Cloth_boots-albedo",
+      "sourceIndex": 14,
+      "sourceKey": "texture:Cloth_boots-albedo"
+    },
+    {
+      "guid": "01a1aa80-d112-7924-b2e0-1b46b35cff64",
+      "kind": "texture",
+      "name": "Hair_short04-albedo",
+      "sourceIndex": 15,
+      "sourceKey": "texture:Hair_short04-albedo"
+    },
+    {
+      "guid": "01a1aa80-d112-7924-b2e0-1b471a45c78b",
+      "kind": "sampler",
+      "name": "filter-9729-9987-10497-10497",
+      "sourceIndex": 0,
+      "sourceKey": "sampler:filter-9729-9987-10497-10497"
+    },
+    {
+      "guid": "01a1aa80-d112-7924-b2e0-1b48d2504e74",
+      "kind": "skeleton",
+      "sourceIndex": 0,
+      "sourceKey": "skeleton"
+    },
+    {
+      "guid": "01a1aa80-d112-7924-b2e0-1b491953c1f5",
+      "kind": "skin",
+      "sourceIndex": 0,
+      "sourceKey": "skin"
+    },
+    {
+      "guid": "01a1aa80-d112-7924-b2e0-1b4a907adeb0",
+      "kind": "animation-clip",
+      "name": "idle",
+      "sourceIndex": 0,
+      "sourceKey": "animation-clip:idle"
+    }
+  ]
+}

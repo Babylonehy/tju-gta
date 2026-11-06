@@ -1,0 +1,9 @@
+{
+  "id": "beiyang-field-notes",
+  "name": "北洋漫梗",
+  "schemaVersion": "3.0.0",
+  "roots": {
+    "engine": "e7f7a4d6-bfb9-5368-aed5-fb98dad82f3c",
+    "frontend": "d350dc71-7ad4-555c-ae41-467a548e4393"
+  }
+}

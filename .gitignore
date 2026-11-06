@@ -1,0 +1,13 @@
+node_modules/
+dist/
+dist-pages/
+release/
+.forgeax/
+.forgeax-debug/
+.assetlib/
+.agents/
+.claude/
+.codebuddy/
+.cursor/
+.workbuddy/
+.DS_Store

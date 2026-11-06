@@ -1,0 +1,1386 @@
+{
+  "importSettings": {
+    "defaultSceneIndex": 0,
+    "diagnostics": {
+      "matrixTrsCoexistNodes": [],
+      "nodeNames": [
+        "06_Sports_OSM",
+        "02_Roads_and_Bridges_OSM",
+        "01_Buildings_OSM_footprints_inferred_heights",
+        "OSM-East-Kiosk-528929232",
+        "03_Water_OSM",
+        "07_Props_and_Utilities",
+        "04_Vegetation_procedural",
+        "05_Surfaces_and_flat_ground",
+        "OSM-Parking-and-Sports-Details",
+        "Campus-brick-and-window-facades",
+        "OSM-Teaching-55-528933946"
+      ],
+      "unsupportedExtensions": []
+    }
+  },
+  "importer": "gltf",
+  "kind": "external-asset-package",
+  "schemaVersion": 1,
+  "source": "beiyang-campus.glb",
+  "sourceOverrideDescriptors": [
+    {
+      "payloadSchema": {
+        "additionalProperties": true,
+        "properties": {
+          "materialSlotDefaultOverrides": {
+            "additionalProperties": {
+              "nullable": true,
+              "type": "string"
+            },
+            "type": "object"
+          },
+          "materialSlots": {
+            "items": {
+              "additionalProperties": true,
+              "properties": {
+                "defaultMaterialGuid": {
+                  "type": "string"
+                },
+                "slotName": {
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "sourceKey": {
+                  "minLength": 1,
+                  "type": "string"
+                }
+              },
+              "required": [
+                "slotName"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      },
+      "semantic": "mesh-material-slot-defaults",
+      "sourceKey": "mesh:06_Sports_OSM"
+    },
+    {
+      "payloadSchema": {
+        "additionalProperties": true,
+        "properties": {
+          "materialSlotDefaultOverrides": {
+            "additionalProperties": {
+              "nullable": true,
+              "type": "string"
+            },
+            "type": "object"
+          },
+          "materialSlots": {
+            "items": {
+              "additionalProperties": true,
+              "properties": {
+                "defaultMaterialGuid": {
+                  "type": "string"
+                },
+                "slotName": {
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "sourceKey": {
+                  "minLength": 1,
+                  "type": "string"
+                }
+              },
+              "required": [
+                "slotName"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      },
+      "semantic": "mesh-material-slot-defaults",
+      "sourceKey": "mesh:02_Roads_and_Bridges_OSM"
+    },
+    {
+      "payloadSchema": {
+        "additionalProperties": true,
+        "properties": {
+          "materialSlotDefaultOverrides": {
+            "additionalProperties": {
+              "nullable": true,
+              "type": "string"
+            },
+            "type": "object"
+          },
+          "materialSlots": {
+            "items": {
+              "additionalProperties": true,
+              "properties": {
+                "defaultMaterialGuid": {
+                  "type": "string"
+                },
+                "slotName": {
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "sourceKey": {
+                  "minLength": 1,
+                  "type": "string"
+                }
+              },
+              "required": [
+                "slotName"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      },
+      "semantic": "mesh-material-slot-defaults",
+      "sourceKey": "mesh:01_Buildings_OSM_footprints_inferred_heights"
+    },
+    {
+      "payloadSchema": {
+        "additionalProperties": true,
+        "properties": {
+          "materialSlotDefaultOverrides": {
+            "additionalProperties": {
+              "nullable": true,
+              "type": "string"
+            },
+            "type": "object"
+          },
+          "materialSlots": {
+            "items": {
+              "additionalProperties": true,
+              "properties": {
+                "defaultMaterialGuid": {
+                  "type": "string"
+                },
+                "slotName": {
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "sourceKey": {
+                  "minLength": 1,
+                  "type": "string"
+                }
+              },
+              "required": [
+                "slotName"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      },
+      "semantic": "mesh-material-slot-defaults",
+      "sourceKey": "mesh:OSM-East-Kiosk-528929232"
+    },
+    {
+      "payloadSchema": {
+        "additionalProperties": true,
+        "properties": {
+          "materialSlotDefaultOverrides": {
+            "additionalProperties": {
+              "nullable": true,
+              "type": "string"
+            },
+            "type": "object"
+          },
+          "materialSlots": {
+            "items": {
+              "additionalProperties": true,
+              "properties": {
+                "defaultMaterialGuid": {
+                  "type": "string"
+                },
+                "slotName": {
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "sourceKey": {
+                  "minLength": 1,
+                  "type": "string"
+                }
+              },
+              "required": [
+                "slotName"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      },
+      "semantic": "mesh-material-slot-defaults",
+      "sourceKey": "mesh:03_Water_OSM"
+    },
+    {
+      "payloadSchema": {
+        "additionalProperties": true,
+        "properties": {
+          "materialSlotDefaultOverrides": {
+            "additionalProperties": {
+              "nullable": true,
+              "type": "string"
+            },
+            "type": "object"
+          },
+          "materialSlots": {
+            "items": {
+              "additionalProperties": true,
+              "properties": {
+                "defaultMaterialGuid": {
+                  "type": "string"
+                },
+                "slotName": {
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "sourceKey": {
+                  "minLength": 1,
+                  "type": "string"
+                }
+              },
+              "required": [
+                "slotName"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      },
+      "semantic": "mesh-material-slot-defaults",
+      "sourceKey": "mesh:07_Props_and_Utilities"
+    },
+    {
+      "payloadSchema": {
+        "additionalProperties": true,
+        "properties": {
+          "materialSlotDefaultOverrides": {
+            "additionalProperties": {
+              "nullable": true,
+              "type": "string"
+            },
+            "type": "object"
+          },
+          "materialSlots": {
+            "items": {
+              "additionalProperties": true,
+              "properties": {
+                "defaultMaterialGuid": {
+                  "type": "string"
+                },
+                "slotName": {
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "sourceKey": {
+                  "minLength": 1,
+                  "type": "string"
+                }
+              },
+              "required": [
+                "slotName"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      },
+      "semantic": "mesh-material-slot-defaults",
+      "sourceKey": "mesh:04_Vegetation_procedural"
+    },
+    {
+      "payloadSchema": {
+        "additionalProperties": true,
+        "properties": {
+          "materialSlotDefaultOverrides": {
+            "additionalProperties": {
+              "nullable": true,
+              "type": "string"
+            },
+            "type": "object"
+          },
+          "materialSlots": {
+            "items": {
+              "additionalProperties": true,
+              "properties": {
+                "defaultMaterialGuid": {
+                  "type": "string"
+                },
+                "slotName": {
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "sourceKey": {
+                  "minLength": 1,
+                  "type": "string"
+                }
+              },
+              "required": [
+                "slotName"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      },
+      "semantic": "mesh-material-slot-defaults",
+      "sourceKey": "mesh:05_Surfaces_and_flat_ground"
+    },
+    {
+      "payloadSchema": {
+        "additionalProperties": true,
+        "properties": {
+          "materialSlotDefaultOverrides": {
+            "additionalProperties": {
+              "nullable": true,
+              "type": "string"
+            },
+            "type": "object"
+          },
+          "materialSlots": {
+            "items": {
+              "additionalProperties": true,
+              "properties": {
+                "defaultMaterialGuid": {
+                  "type": "string"
+                },
+                "slotName": {
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "sourceKey": {
+                  "minLength": 1,
+                  "type": "string"
+                }
+              },
+              "required": [
+                "slotName"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      },
+      "semantic": "mesh-material-slot-defaults",
+      "sourceKey": "mesh:OSM-Parking-and-Sports-Details"
+    },
+    {
+      "payloadSchema": {
+        "additionalProperties": true,
+        "properties": {
+          "materialSlotDefaultOverrides": {
+            "additionalProperties": {
+              "nullable": true,
+              "type": "string"
+            },
+            "type": "object"
+          },
+          "materialSlots": {
+            "items": {
+              "additionalProperties": true,
+              "properties": {
+                "defaultMaterialGuid": {
+                  "type": "string"
+                },
+                "slotName": {
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "sourceKey": {
+                  "minLength": 1,
+                  "type": "string"
+                }
+              },
+              "required": [
+                "slotName"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      },
+      "semantic": "mesh-material-slot-defaults",
+      "sourceKey": "mesh:Campus-brick-and-window-facades"
+    },
+    {
+      "payloadSchema": {
+        "additionalProperties": true,
+        "properties": {
+          "materialSlotDefaultOverrides": {
+            "additionalProperties": {
+              "nullable": true,
+              "type": "string"
+            },
+            "type": "object"
+          },
+          "materialSlots": {
+            "items": {
+              "additionalProperties": true,
+              "properties": {
+                "defaultMaterialGuid": {
+                  "type": "string"
+                },
+                "slotName": {
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "sourceKey": {
+                  "minLength": 1,
+                  "type": "string"
+                }
+              },
+              "required": [
+                "slotName"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      },
+      "semantic": "mesh-material-slot-defaults",
+      "sourceKey": "mesh:OSM-Teaching-55-528933946"
+    }
+  ],
+  "sourceOverrides": {
+    "mesh:01_Buildings_OSM_footprints_inferred_heights": {
+      "materialSlots": [
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-59ffa1356b2f",
+          "slotName": "Windows",
+          "sourceKey": "material:Windows"
+        },
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-5a009f2fd741",
+          "slotName": "Plaster002",
+          "sourceKey": "material:Plaster002"
+        },
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-5a0103dfa20a",
+          "slotName": "brick-44",
+          "sourceKey": "material:brick-44"
+        },
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-5a02c7ea9c99",
+          "slotName": "RoofingTiles010",
+          "sourceKey": "material:RoofingTiles010"
+        }
+      ]
+    },
+    "mesh:02_Roads_and_Bridges_OSM": {
+      "materialSlots": [
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-59fa91e1a903",
+          "slotName": "Material_8",
+          "sourceKey": "material:Material_8"
+        },
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-59fbaf3470b6",
+          "slotName": "road-asphalt",
+          "sourceKey": "material:road-asphalt"
+        },
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-59fc83b5992f",
+          "slotName": "road_marking_dash",
+          "sourceKey": "material:road_marking_dash"
+        },
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-59fd9b8c980e",
+          "slotName": "Concrete034",
+          "sourceKey": "material:Concrete034"
+        },
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-59fed88e9e62",
+          "slotName": "SETT",
+          "sourceKey": "material:SETT"
+        }
+      ]
+    },
+    "mesh:03_Water_OSM": {
+      "materialSlots": [
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-5a03d49e35c8",
+          "slotName": "campus-grass",
+          "sourceKey": "material:campus-grass"
+        },
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-5a043765e9fd",
+          "slotName": "WATER",
+          "sourceKey": "material:WATER"
+        }
+      ]
+    },
+    "mesh:04_Vegetation_procedural": {
+      "materialSlots": [
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-5a0a6e7602e8",
+          "slotName": "TextureAtlas 9b8f1c6e",
+          "sourceKey": "material:TextureAtlas 9b8f1c6e"
+        }
+      ]
+    },
+    "mesh:05_Surfaces_and_flat_ground": {
+      "materialSlots": [
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-5a03d49e35c8",
+          "slotName": "campus-grass",
+          "sourceKey": "material:campus-grass"
+        },
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-5a0b6458572e",
+          "slotName": "EARTH",
+          "sourceKey": "material:EARTH"
+        },
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-59fbaf3470b6",
+          "slotName": "road-asphalt",
+          "sourceKey": "material:road-asphalt"
+        }
+      ]
+    },
+    "mesh:06_Sports_OSM": {
+      "materialSlots": [
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-59f6f0b98473",
+          "slotName": "clay",
+          "sourceKey": "material:clay"
+        },
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-59f73ae9da25",
+          "slotName": "Plastic010",
+          "sourceKey": "material:Plastic010"
+        },
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-59f864594e8e",
+          "slotName": "TENNIS_NET",
+          "sourceKey": "material:TENNIS_NET"
+        },
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-59f92da3e8fc",
+          "slotName": "pitchTennis",
+          "sourceKey": "material:pitchTennis"
+        }
+      ]
+    },
+    "mesh:07_Props_and_Utilities": {
+      "materialSlots": [
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-5a05ed2f3c76",
+          "slotName": "STEEL",
+          "sourceKey": "material:STEEL"
+        },
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-5a06927da48b",
+          "slotName": "TextureAtlas e34b3ea1",
+          "sourceKey": "material:TextureAtlas e34b3ea1"
+        },
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-59fa91e1a903",
+          "slotName": "Material_8",
+          "sourceKey": "material:Material_8"
+        },
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-5a07d168d0b2",
+          "slotName": "Bricks008",
+          "sourceKey": "material:Bricks008"
+        },
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-5a081dbce296",
+          "slotName": "TextureAtlas fa2bc641",
+          "sourceKey": "material:TextureAtlas fa2bc641"
+        },
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-5a09452062b2",
+          "slotName": "Grass-2048",
+          "sourceKey": "material:Grass-2048"
+        }
+      ]
+    },
+    "mesh:Campus-brick-and-window-facades": {
+      "materialSlots": [
+        {
+          "defaultMaterialGuid": "01a1af3e-0096-7bea-ad80-e61a9d1d0d97",
+          "slotName": "brick-campus",
+          "sourceKey": "material:brick-campus"
+        },
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-59ffa1356b2f",
+          "slotName": "Windows",
+          "sourceKey": "material:Windows"
+        }
+      ]
+    },
+    "mesh:OSM-East-Kiosk-528929232": {
+      "materialSlots": [
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-59ffa1356b2f",
+          "slotName": "Windows",
+          "sourceKey": "material:Windows"
+        },
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-5a009f2fd741",
+          "slotName": "Plaster002",
+          "sourceKey": "material:Plaster002"
+        },
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-5a02c7ea9c99",
+          "slotName": "RoofingTiles010",
+          "sourceKey": "material:RoofingTiles010"
+        }
+      ]
+    },
+    "mesh:OSM-Parking-and-Sports-Details": {
+      "materialSlots": [
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-5a0c9be9f2d0",
+          "slotName": "parking-asphalt",
+          "sourceKey": "material:parking-asphalt"
+        },
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-5a0d4dca7c70",
+          "slotName": "court-line",
+          "sourceKey": "material:court-line"
+        },
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-5a0e00e2ed9e",
+          "slotName": "running-rubber",
+          "sourceKey": "material:running-rubber"
+        },
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-5a0f79a91223",
+          "slotName": "court-painted",
+          "sourceKey": "material:court-painted"
+        },
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-5a10ae946b0a",
+          "slotName": "turf-light",
+          "sourceKey": "material:turf-light"
+        },
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-5a1194452eae",
+          "slotName": "turf-dark",
+          "sourceKey": "material:turf-dark"
+        }
+      ]
+    },
+    "mesh:OSM-Teaching-55-528933946": {
+      "materialSlots": [
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-5a02c7ea9c99",
+          "slotName": "RoofingTiles010",
+          "sourceKey": "material:RoofingTiles010"
+        },
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-5a0103dfa20a",
+          "slotName": "brick-44",
+          "sourceKey": "material:brick-44"
+        },
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-59ffa1356b2f",
+          "slotName": "Windows",
+          "sourceKey": "material:Windows"
+        },
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-5a009f2fd741",
+          "slotName": "Plaster002",
+          "sourceKey": "material:Plaster002"
+        },
+        {
+          "defaultMaterialGuid": "01a1aba4-dc99-72a6-87a8-5a05ed2f3c76",
+          "slotName": "STEEL",
+          "sourceKey": "material:STEEL"
+        }
+      ]
+    }
+  },
+  "subAssets": [
+    {
+      "guid": "01a1aba4-dc98-7ab2-9b27-9d5cc99e47cc",
+      "kind": "mesh",
+      "name": "06_Sports_OSM",
+      "sourceIndex": 0,
+      "sourceKey": "mesh:06_Sports_OSM"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-59ee505bb5a6",
+      "kind": "mesh",
+      "name": "02_Roads_and_Bridges_OSM",
+      "sourceIndex": 1,
+      "sourceKey": "mesh:02_Roads_and_Bridges_OSM"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-59ef4c8ab1fa",
+      "kind": "mesh",
+      "name": "01_Buildings_OSM_footprints_inferred_heights",
+      "sourceIndex": 2,
+      "sourceKey": "mesh:01_Buildings_OSM_footprints_inferred_heights"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-59f040e18720",
+      "kind": "mesh",
+      "name": "OSM-East-Kiosk-528929232",
+      "sourceIndex": 3,
+      "sourceKey": "mesh:OSM-East-Kiosk-528929232"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-59f1e2d91aeb",
+      "kind": "mesh",
+      "name": "03_Water_OSM",
+      "sourceIndex": 4,
+      "sourceKey": "mesh:03_Water_OSM"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-59f2eadb6f72",
+      "kind": "mesh",
+      "name": "07_Props_and_Utilities",
+      "sourceIndex": 5,
+      "sourceKey": "mesh:07_Props_and_Utilities"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-59f3e2db3143",
+      "kind": "mesh",
+      "name": "04_Vegetation_procedural",
+      "sourceIndex": 6,
+      "sourceKey": "mesh:04_Vegetation_procedural"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-59f4e798d84a",
+      "kind": "mesh",
+      "name": "05_Surfaces_and_flat_ground",
+      "sourceIndex": 7,
+      "sourceKey": "mesh:05_Surfaces_and_flat_ground"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-59f5bf9b533c",
+      "kind": "mesh",
+      "name": "OSM-Parking-and-Sports-Details",
+      "sourceIndex": 8,
+      "sourceKey": "mesh:OSM-Parking-and-Sports-Details"
+    },
+    {
+      "guid": "01a1af3e-0095-7e27-8281-b75c1635244c",
+      "kind": "mesh",
+      "name": "Campus-brick-and-window-facades",
+      "sourceIndex": 9,
+      "sourceKey": "mesh:Campus-brick-and-window-facades"
+    },
+    {
+      "guid": "01a1af6a-ac16-788c-809e-7eda983e752b",
+      "kind": "mesh",
+      "name": "OSM-Teaching-55-528933946",
+      "sourceIndex": 10,
+      "sourceKey": "mesh:OSM-Teaching-55-528933946"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-59f6f0b98473",
+      "kind": "material",
+      "name": "clay",
+      "sourceIndex": 0,
+      "sourceKey": "material:clay"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-59f73ae9da25",
+      "kind": "material",
+      "name": "Plastic010",
+      "sourceIndex": 1,
+      "sourceKey": "material:Plastic010"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-59f864594e8e",
+      "kind": "material",
+      "name": "TENNIS_NET",
+      "sourceIndex": 2,
+      "sourceKey": "material:TENNIS_NET"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-59f92da3e8fc",
+      "kind": "material",
+      "name": "pitchTennis",
+      "sourceIndex": 3,
+      "sourceKey": "material:pitchTennis"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-59fa91e1a903",
+      "kind": "material",
+      "name": "Material_8",
+      "sourceIndex": 4,
+      "sourceKey": "material:Material_8"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-59fbaf3470b6",
+      "kind": "material",
+      "name": "road-asphalt",
+      "sourceIndex": 5,
+      "sourceKey": "material:road-asphalt"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-59fc83b5992f",
+      "kind": "material",
+      "name": "road_marking_dash",
+      "sourceIndex": 6,
+      "sourceKey": "material:road_marking_dash"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-59fd9b8c980e",
+      "kind": "material",
+      "name": "Concrete034",
+      "sourceIndex": 7,
+      "sourceKey": "material:Concrete034"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-59fed88e9e62",
+      "kind": "material",
+      "name": "SETT",
+      "sourceIndex": 8,
+      "sourceKey": "material:SETT"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-59ffa1356b2f",
+      "kind": "material",
+      "name": "Windows",
+      "sourceIndex": 9,
+      "sourceKey": "material:Windows"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a009f2fd741",
+      "kind": "material",
+      "name": "Plaster002",
+      "sourceIndex": 10,
+      "sourceKey": "material:Plaster002"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a0103dfa20a",
+      "kind": "material",
+      "name": "brick-44",
+      "sourceIndex": 11,
+      "sourceKey": "material:brick-44"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a02c7ea9c99",
+      "kind": "material",
+      "name": "RoofingTiles010",
+      "sourceIndex": 12,
+      "sourceKey": "material:RoofingTiles010"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a03d49e35c8",
+      "kind": "material",
+      "name": "campus-grass",
+      "sourceIndex": 13,
+      "sourceKey": "material:campus-grass"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a043765e9fd",
+      "kind": "material",
+      "name": "WATER",
+      "sourceIndex": 14,
+      "sourceKey": "material:WATER"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a05ed2f3c76",
+      "kind": "material",
+      "name": "STEEL",
+      "sourceIndex": 15,
+      "sourceKey": "material:STEEL"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a06927da48b",
+      "kind": "material",
+      "name": "TextureAtlas e34b3ea1",
+      "sourceIndex": 16,
+      "sourceKey": "material:TextureAtlas e34b3ea1"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a07d168d0b2",
+      "kind": "material",
+      "name": "Bricks008",
+      "sourceIndex": 17,
+      "sourceKey": "material:Bricks008"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a081dbce296",
+      "kind": "material",
+      "name": "TextureAtlas fa2bc641",
+      "sourceIndex": 18,
+      "sourceKey": "material:TextureAtlas fa2bc641"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a09452062b2",
+      "kind": "material",
+      "name": "Grass-2048",
+      "sourceIndex": 19,
+      "sourceKey": "material:Grass-2048"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a0a6e7602e8",
+      "kind": "material",
+      "name": "TextureAtlas 9b8f1c6e",
+      "sourceIndex": 20,
+      "sourceKey": "material:TextureAtlas 9b8f1c6e"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a0b6458572e",
+      "kind": "material",
+      "name": "EARTH",
+      "sourceIndex": 21,
+      "sourceKey": "material:EARTH"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a0c9be9f2d0",
+      "kind": "material",
+      "name": "parking-asphalt",
+      "sourceIndex": 22,
+      "sourceKey": "material:parking-asphalt"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a0d4dca7c70",
+      "kind": "material",
+      "name": "court-line",
+      "sourceIndex": 23,
+      "sourceKey": "material:court-line"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a0e00e2ed9e",
+      "kind": "material",
+      "name": "running-rubber",
+      "sourceIndex": 24,
+      "sourceKey": "material:running-rubber"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a0f79a91223",
+      "kind": "material",
+      "name": "court-painted",
+      "sourceIndex": 25,
+      "sourceKey": "material:court-painted"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a10ae946b0a",
+      "kind": "material",
+      "name": "turf-light",
+      "sourceIndex": 26,
+      "sourceKey": "material:turf-light"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a1194452eae",
+      "kind": "material",
+      "name": "turf-dark",
+      "sourceIndex": 27,
+      "sourceKey": "material:turf-dark"
+    },
+    {
+      "guid": "01a1af3e-0096-7bea-ad80-e61a9d1d0d97",
+      "kind": "material",
+      "name": "brick-campus",
+      "sourceIndex": 28,
+      "sourceKey": "material:brick-campus"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a12650f8da8",
+      "kind": "scene",
+      "name": "Beiyang-OSM-Campus",
+      "sourceIndex": 0,
+      "sourceKey": "scene:Beiyang-OSM-Campus"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a130c038a7d",
+      "kind": "texture",
+      "name": "Image_28",
+      "sourceIndex": 0,
+      "sourceKey": "texture:Image_28"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a1461cb761d",
+      "kind": "texture",
+      "name": "Image_25",
+      "sourceIndex": 1,
+      "sourceKey": "texture:Image_25"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a1510155f38",
+      "kind": "texture",
+      "name": "Image_24",
+      "sourceIndex": 2,
+      "sourceKey": "texture:Image_24"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a166e064c5c",
+      "kind": "texture",
+      "name": "Image_23",
+      "sourceIndex": 3,
+      "sourceKey": "texture:Image_23"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a17d4fd5006",
+      "kind": "texture",
+      "name": "Image_26",
+      "sourceIndex": 4,
+      "sourceKey": "texture:Image_26"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a18a48ce00b",
+      "kind": "texture",
+      "name": "Image_27",
+      "sourceIndex": 5,
+      "sourceKey": "texture:Image_27"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a19cb46f86f",
+      "kind": "texture",
+      "name": "Image_20",
+      "sourceIndex": 6,
+      "sourceKey": "texture:Image_20"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a1a296901e4",
+      "kind": "texture",
+      "name": "asphalt_track_diff_1k",
+      "sourceIndex": 7,
+      "sourceKey": "texture:asphalt_track_diff_1k"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a1bf1740317",
+      "kind": "texture",
+      "name": "asphalt_track_nor_gl_1k",
+      "sourceIndex": 8,
+      "sourceKey": "texture:asphalt_track_nor_gl_1k"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a1cc679d631",
+      "kind": "texture",
+      "name": "asphalt_track_arm_1k",
+      "sourceIndex": 9,
+      "sourceKey": "texture:asphalt_track_arm_1k"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a1df89835d8",
+      "kind": "texture",
+      "name": "Image_16",
+      "sourceIndex": 10,
+      "sourceKey": "texture:Image_16"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a1ed45997fb",
+      "kind": "texture",
+      "name": "Image_22",
+      "sourceIndex": 11,
+      "sourceKey": "texture:Image_22"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a1fd7ae9400",
+      "kind": "texture",
+      "name": "Image_21",
+      "sourceIndex": 12,
+      "sourceKey": "texture:Image_21"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a2010e25670",
+      "kind": "texture",
+      "name": "Image_31",
+      "sourceIndex": 13,
+      "sourceKey": "texture:Image_31"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a210892aa86",
+      "kind": "texture",
+      "name": "Image_30",
+      "sourceIndex": 14,
+      "sourceKey": "texture:Image_30"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a220bb4c7da",
+      "kind": "texture",
+      "name": "Image_29",
+      "sourceIndex": 15,
+      "sourceKey": "texture:Image_29"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a2385bc529e",
+      "kind": "texture",
+      "name": "Image_15",
+      "sourceIndex": 16,
+      "sourceKey": "texture:Image_15"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a2480fb2bea",
+      "kind": "texture",
+      "name": "Image_14",
+      "sourceIndex": 17,
+      "sourceKey": "texture:Image_14"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a2521c46440",
+      "kind": "texture",
+      "name": "Image_13",
+      "sourceIndex": 18,
+      "sourceKey": "texture:Image_13"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a268d0388dd",
+      "kind": "texture",
+      "name": "Image_9",
+      "sourceIndex": 19,
+      "sourceKey": "texture:Image_9"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a27992f1eb2",
+      "kind": "texture",
+      "name": "Image_8",
+      "sourceIndex": 20,
+      "sourceKey": "texture:Image_8"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a28c771b5d4",
+      "kind": "texture",
+      "name": "Image_7",
+      "sourceIndex": 21,
+      "sourceKey": "texture:Image_7"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a299dac6368",
+      "kind": "texture",
+      "name": "red_bricks_04_diff_1k",
+      "sourceIndex": 22,
+      "sourceKey": "texture:red_bricks_04_diff_1k"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a2aa54b06dd",
+      "kind": "texture",
+      "name": "red_bricks_04_nor_gl_1k",
+      "sourceIndex": 23,
+      "sourceKey": "texture:red_bricks_04_nor_gl_1k"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a2bee232182",
+      "kind": "texture",
+      "name": "red_bricks_04_arm_1k",
+      "sourceIndex": 24,
+      "sourceKey": "texture:red_bricks_04_arm_1k"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a2c0bb71528",
+      "kind": "texture",
+      "name": "Image_12",
+      "sourceIndex": 25,
+      "sourceKey": "texture:Image_12"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a2d9c4717e7",
+      "kind": "texture",
+      "name": "Image_11",
+      "sourceIndex": 26,
+      "sourceKey": "texture:Image_11"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a2e95febed9",
+      "kind": "texture",
+      "name": "Image_10",
+      "sourceIndex": 27,
+      "sourceKey": "texture:Image_10"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a2fe4b0a4e7",
+      "kind": "texture",
+      "name": "leafy_grass_diff_1k",
+      "sourceIndex": 28,
+      "sourceKey": "texture:leafy_grass_diff_1k"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a308018b5f9",
+      "kind": "texture",
+      "name": "leafy_grass_nor_gl_1k",
+      "sourceIndex": 29,
+      "sourceKey": "texture:leafy_grass_nor_gl_1k"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a3155b2a1da",
+      "kind": "texture",
+      "name": "leafy_grass_arm_1k",
+      "sourceIndex": 30,
+      "sourceKey": "texture:leafy_grass_arm_1k"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a323f292766",
+      "kind": "texture",
+      "name": "Image_38",
+      "sourceIndex": 31,
+      "sourceKey": "texture:Image_38"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a335227f617",
+      "kind": "texture",
+      "name": "Image_34",
+      "sourceIndex": 32,
+      "sourceKey": "texture:Image_34"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a343bfc0b92",
+      "kind": "texture",
+      "name": "Image_33",
+      "sourceIndex": 33,
+      "sourceKey": "texture:Image_33"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a35fb17b375",
+      "kind": "texture",
+      "name": "Image_32",
+      "sourceIndex": 34,
+      "sourceKey": "texture:Image_32"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a36de8951d1",
+      "kind": "texture",
+      "name": "Image_0",
+      "sourceIndex": 35,
+      "sourceKey": "texture:Image_0"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a37696a5d0b",
+      "kind": "texture",
+      "name": "Image_37",
+      "sourceIndex": 36,
+      "sourceKey": "texture:Image_37"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a38ee3cf7dc",
+      "kind": "texture",
+      "name": "Image_36",
+      "sourceIndex": 37,
+      "sourceKey": "texture:Image_36"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a39ae0de2a6",
+      "kind": "texture",
+      "name": "Image_35",
+      "sourceIndex": 38,
+      "sourceKey": "texture:Image_35"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a3a4df3e90b",
+      "kind": "texture",
+      "name": "Image_39",
+      "sourceIndex": 39,
+      "sourceKey": "texture:Image_39"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a3bf25d0402",
+      "kind": "texture",
+      "name": "Image_19",
+      "sourceIndex": 40,
+      "sourceKey": "texture:Image_19"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a3c56f7be5d",
+      "kind": "texture",
+      "name": "Image_18",
+      "sourceIndex": 41,
+      "sourceKey": "texture:Image_18"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a3d3aeade18",
+      "kind": "texture",
+      "name": "Image_17",
+      "sourceIndex": 42,
+      "sourceKey": "texture:Image_17"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a3ec1e49e83",
+      "kind": "texture",
+      "name": "court-line-albedo",
+      "sourceIndex": 43,
+      "sourceKey": "texture:court-line-albedo"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a3f5538d5fc",
+      "kind": "texture",
+      "name": "running-rubber-albedo",
+      "sourceIndex": 44,
+      "sourceKey": "texture:running-rubber-albedo"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a40dacff8f8",
+      "kind": "texture",
+      "name": "court-painted-albedo",
+      "sourceIndex": 45,
+      "sourceKey": "texture:court-painted-albedo"
+    },
+    {
+      "guid": "01a1abf7-a3b6-73b8-b491-1b379b6dfb79",
+      "kind": "texture",
+      "name": "asphalt_02_diff_1k",
+      "sourceIndex": 46,
+      "sourceKey": "texture:asphalt_02_diff_1k"
+    },
+    {
+      "guid": "01a1abf7-a3b7-7006-a849-72177c149a50",
+      "kind": "texture",
+      "name": "asphalt_02_nor_gl_1k",
+      "sourceIndex": 47,
+      "sourceKey": "texture:asphalt_02_nor_gl_1k"
+    },
+    {
+      "guid": "01a1abf7-a3b7-7006-a849-72181d875dc8",
+      "kind": "texture",
+      "name": "asphalt_02_arm_1k",
+      "sourceIndex": 48,
+      "sourceKey": "texture:asphalt_02_arm_1k"
+    },
+    {
+      "guid": "01a1abf7-a3b7-7006-a849-721966a5e441",
+      "kind": "texture",
+      "name": "concrete_wall_009_diff_1k",
+      "sourceIndex": 49,
+      "sourceKey": "texture:concrete_wall_009_diff_1k"
+    },
+    {
+      "guid": "01a1abf7-a3b7-7006-a849-721a1931419b",
+      "kind": "texture",
+      "name": "concrete_wall_009_nor_gl_1k",
+      "sourceIndex": 50,
+      "sourceKey": "texture:concrete_wall_009_nor_gl_1k"
+    },
+    {
+      "guid": "01a1abf7-a3b7-7006-a849-721b44eaf444",
+      "kind": "texture",
+      "name": "concrete_wall_009_arm_1k",
+      "sourceIndex": 51,
+      "sourceKey": "texture:concrete_wall_009_arm_1k"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a41fe349fa9",
+      "kind": "sampler",
+      "name": "repeat-0",
+      "sourceIndex": 0,
+      "sourceKey": "sampler:repeat-0"
+    },
+    {
+      "guid": "01a1aba4-dc99-72a6-87a8-5a42558c5695",
+      "kind": "sampler",
+      "name": "clamp-1",
+      "sourceIndex": 1,
+      "sourceKey": "sampler:clamp-1"
+    }
+  ]
+}
